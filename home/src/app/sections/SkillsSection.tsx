@@ -226,7 +226,7 @@ export function SkillsSection({theme}: { theme: ThemeMode }) {
                 <div className="relative">
                     <div
                         ref={trailRef}
-                        className="skills-duck-trail pointer-events-none absolute inset-y-0 left-0 z-10 block w-20 select-none sm:w-24 md:w-28"
+                        className="skills-duck-trail pointer-events-none absolute inset-y-0 -left-4 z-10 block w-20 select-none sm:-left-6 sm:w-24 md:-left-9 md:w-28"
                         aria-hidden="true"
                     >
                         <svg
@@ -290,7 +290,7 @@ export function SkillsSection({theme}: { theme: ThemeMode }) {
                         </div>
                     </div>
 
-                    <div className="pl-20 sm:pl-24 md:pl-32">
+                    <div className="pl-12 sm:pl-14 md:pl-16">
                         {SKILL_CATEGORIES.map((category) => {
                             const items = SKILLS.filter((s) => s.category === category);
                             return (
@@ -300,13 +300,13 @@ export function SkillsSection({theme}: { theme: ThemeMode }) {
                             >
                                 {SKILL_LABELS[category]}
                             </h3>
-                            <div className="flex flex-wrap gap-3">
+                            <div className="flex flex-wrap gap-2 sm:gap-3">
                                 {items.map(({name, color, logo, invertLogoThemes, logoBg}) => (
                                     <div
                                         key={name}
                                         className={`skill-reveal-item skill-reveal-card group flex items-center border cursor-default ${
                                             logo
-                                                ? "w-25 flex-none flex-col justify-center gap-2 rounded-[6px] px-3 py-3"
+                                                ? "w-[calc(33.333333%-0.333333rem)] flex-none flex-col justify-center gap-2 rounded-[6px] px-2 py-3 sm:w-25 sm:px-3"
                                                 : "gap-2.5 rounded-[6px] px-4 py-2.5"
                                         } ${
                                             theme === "light"
@@ -354,3 +354,6 @@ export function SkillsSection({theme}: { theme: ThemeMode }) {
         </section>
     );
 }
+
+
+
