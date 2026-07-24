@@ -24,7 +24,6 @@ export const CONTENT = {
             github: "https://github.com/Shuail135",
             linkedin: "https://www.linkedin.com/in/sum-yan-wan-600245283/",
         },
-        status: "Open to opportunities",
         greetingPrefix: "Hi, I'm",
         description: "Most people call me Charmaine. " +
             "I'm a Computer Engineering graduate with a habit of exploring how things work " +
@@ -125,12 +124,13 @@ export const CONTENT = {
         cardSubtitle: "in prepare",
         features: [
             {title: "Music Sheet/Keyboard to MIDI",
+                href: "https://shuail135.github.io/music-production-for-dummies/music-score-app",
                 desc: "An interactive digital piano and sheet music editor that lets you easily write music by either " +
                     "clicking directly on the musical staff or playing the on-screen keyboard. Allows you to record your" +
                     "melodies with an option to quantize your timing before downloading the final piece as a standard " +
                     "MIDI file. "},
-            {title: "title2", desc: "temp"},
-            {title: "title3", desc: "temp"},
+            {title: "title2", href: "#", desc: "temp"},
+            {title: "title3", href: "#", desc: "temp"},
         ],
         ctaTitle: "Ready to start making music?",
         ctaDescription: "Not done yet.",
@@ -143,7 +143,7 @@ export const CONTENT = {
         eyebrow: "Get in Touch",
         heading: {
             first: "Let's",
-            primary: "Connect",
+            primary: "Talk!",
         },
         description: "Whether it's about a project, an opportunity, or just something interesting, " +
             "feel free to send me a message! ",
@@ -173,6 +173,6 @@ export const CONTENT = {
 
     // Footer text.
     footer: {
-        note: "QuackQuack",
+        note: "Designed in 2026",
     },
 } as const;

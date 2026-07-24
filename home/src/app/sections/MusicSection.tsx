@@ -49,9 +49,15 @@ export function MusicSection({theme}: { theme: ThemeMode }) {
                                     <Headphones size={24} className="text-accent"/>
                                 </div>
                                 <div>
-                                    <div className="font-display font-bold text-2xl">
+                                    <a
+                                        href={CONTENT.music.ctaHref}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center gap-2 font-display font-bold text-2xl transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none"
+                                    >
                                         {CONTENT.music.cardTitle}
-                                    </div>
+                                        <ExternalLink size={16} aria-hidden="true"/>
+                                    </a>
                                     <div className="text-sm text-muted-foreground font-mono mt-0.5">
                                         {CONTENT.music.cardSubtitle}
                                     </div>
@@ -62,7 +68,7 @@ export function MusicSection({theme}: { theme: ThemeMode }) {
 
                     <div className="p-8 grid md:grid-cols-3 gap-8">
                         {[
-                            {icon: <Music size={20} className="text-accent"/>, title: CONTENT.music.features[0].title, desc: CONTENT.music.features[0].desc},
+                            {icon: <Music size={20} className="text-accent"/>, title: CONTENT.music.features[0].title, desc: CONTENT.music.features[0].desc, href: CONTENT.music.features[0].href},
                             {
                                 icon: (
                                     <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5 text-accent" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -71,14 +77,27 @@ export function MusicSection({theme}: { theme: ThemeMode }) {
                                 ),
                                 title: CONTENT.music.features[1].title,
                                 desc: CONTENT.music.features[1].desc,
+                                href: CONTENT.music.features[1].href,
                             },
-                            {icon: <Volume2 size={20} className="text-accent"/>, title: CONTENT.music.features[2].title, desc: CONTENT.music.features[2].desc},
-                        ].map(({icon, title, desc}) => (
+                            {icon: <Volume2 size={20} className="text-accent"/>, title: CONTENT.music.features[2].title, desc: CONTENT.music.features[2].desc, href: CONTENT.music.features[2].href},
+                        ].map(({icon, title, desc, href}) => (
                             <div key={title} className="flex flex-col gap-3">
                                 <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center">
                                     {icon}
                                 </div>
-                                <h3 className="font-display font-semibold text-foreground">{title}</h3>
+                                <h3 className="font-display font-semibold text-foreground">
+                                    {href ? (
+                                        <a
+                                            href={href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none"
+                                        >
+                                            {title}
+                                            <ExternalLink size={13} aria-hidden="true"/>
+                                        </a>
+                                    ) : title}
+                                </h3>
                                 <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
                             </div>
                         ))}
@@ -122,3 +141,4 @@ export function MusicSection({theme}: { theme: ThemeMode }) {
         </section>
     );
 }
+

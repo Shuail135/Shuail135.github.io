@@ -27,10 +27,6 @@ export function HeroSection({theme, avatarTriggerRef, onScrollTo}: HeroSectionPr
 
             <div className="max-w-7xl mx-auto px-6 pt-14 pb-20 lg:pt-10 lg:pb-16 grid lg:grid-cols-2 gap-12 lg:gap-14 items-center w-full">
                 <div className="order-2 lg:order-1">
-                    <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-mono mb-6">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"/>
-                        {CONTENT.hero.status}
-                    </div>
 
                     <h1 className="text-5xl lg:text-[4.5rem] font-display font-extrabold leading-[1.06] tracking-tight mb-6">
                         {CONTENT.hero.greetingPrefix}{" "}
