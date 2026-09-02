@@ -89,6 +89,11 @@ export const CONTENT = {
                 tech: ["Python", "Computer Vision", "Embedded AI", "Linux", "Hardware Integration"],
                 github: "https://github.com/Shuail135/ECOllector",
                 demo: "https://ecollector-rouge.vercel.app/"},
+            {title: "CamiTune",
+                description: "A native macOS app for system-wide parametric EQ with frequency, gain, and Q controls. Powered by CamillaDSP.",
+                tech: ["Swift", "C", "Shell", "Audio Processing"],
+                github: "https://github.com/Shuail135/CamiTune",
+                demo: "https://github.com/Shuail135/CamiTune/blob/main/README.md"},
             {title: "Assistant",
                 description: "A customizable CPU-only voice assistant that runs locally, switching between command " +
                     "handling and LLM-based conversation depending on the user's input. ",
@@ -123,13 +128,15 @@ export const CONTENT = {
         cardTitle: "Music Production for Dummies",
         cardSubtitle: "in prepare",
         features: [
+            {title: "CamiTune",
+                href: "https://github.com/Shuail135/CamiTune",
+                desc: "A native macOS app for system-wide parametric EQ with frequency, gain, and Q controls."},
             {title: "Music Sheet/Keyboard to MIDI",
                 href: "https://shuail135.github.io/music-production-for-dummies/music-score-app",
                 desc: "An interactive digital piano and sheet music editor that lets you easily write music by either " +
                     "clicking directly on the musical staff or playing the on-screen keyboard. Allows you to record your" +
                     "melodies with an option to quantize your timing before downloading the final piece as a standard " +
                     "MIDI file. "},
-            {title: "title2", href: "#", desc: "temp"},
             {title: "title3", href: "#", desc: "temp"},
         ],
         ctaTitle: "Ready to start making music?",

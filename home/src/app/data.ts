@@ -40,6 +40,12 @@ export const SKILLS = [
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
     },
     {
+        name: "Swift",
+        category: "Language",
+        color: "#f05138",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
+    },
+    {
         name: "JavaScript",
         category: "Language",
         color: "#f7df1e",
@@ -152,6 +158,12 @@ export const SKILLS = [
         category: "DevOps & Tools",
         color: "#3ddc84",
         logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+    },
+    {
+        name: "Xcode",
+        category: "DevOps & Tools",
+        color: "#147efb",
+        logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
     },
     {
         name: "Godot",
